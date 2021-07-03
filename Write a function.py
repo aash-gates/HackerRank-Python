@@ -7,5 +7,5 @@ def is_leap(year):
         return True
     return False
 
-year = int(eval(input()))
-print((is_leap(year)))
+year = int(input())
+print(is_leap(year)
