@@ -6,7 +6,6 @@
 6
 7
 
-	
 # Re.split() in python - hacker rank solution
 # Python 3
 # Re.split() in python - hacker rank solution START 
