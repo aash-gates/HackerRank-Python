@@ -1,7 +1,3 @@
-from itertools import product
-a = map(int, input().split())
-b = map(int, input().split())
-
-print(*product(a, b))
-
-
+from itertools import permutations
+s,n = input().split()
+print(*[''.join(i) for i in permutations(sorted(s),int(n))],sep='\n')
