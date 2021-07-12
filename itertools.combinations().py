@@ -1,3 +1,7 @@
-from itertools import permutations
-s,n = input().split()
-print(*[''.join(i) for i in permutations(sorted(s),int(n))],sep='\n')
+from itertools import combinations
+
+s , n  = input().split()
+
+for i in range(1, int(n)+1):
+    for j in combinations(sorted(s), i):
+        print(''.join(j))
