@@ -1,4 +1,2 @@
 import numpy
-N, M = list(map(int, input().split()))
-
-print(numpy.eye(N, M, k = 0))
+print(str(numpy.eye(*map(int,input().split()))).replace('1',' 1').replace('0',' 0'))
