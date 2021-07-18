@@ -1,6 +1,9 @@
 import numpy
 
-my_array = numpy.array(list(map(float, input().split())))
-print(numpy.floor(my_array))
-print(numpy.ceil(my_array))
-print(numpy.rint(my_array))
+numpy.set_printoptions(sign=' ')
+
+a = numpy.array(input().split(),float)
+
+print(numpy.floor(a))
+print(numpy.ceil(a))
+print(numpy.rint(a))
