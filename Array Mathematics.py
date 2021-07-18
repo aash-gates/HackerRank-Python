@@ -1,12 +1,4 @@
-import numpy
-
-N, M = list(map(int, input().split()))
-A =  numpy.array([list(map(int, input().split())) for i in range(N)])
-B =  numpy.array([list(map(int, input().split())) for i in range(N)])
-
-print(A + B)
-print(A - B)
-print(A * B)
-print(A / B)
-print(A % B)
-print(A ** B)
+import numpy as np
+n, m = map(int, input().split())
+a, b = (np.array([input().split() for _ in range(n)], dtype=int) for _ in range(2))
+print(a+b, a-b, a*b, a//b, a%b, a**b, sep='\n')
