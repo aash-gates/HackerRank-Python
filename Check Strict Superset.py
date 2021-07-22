@@ -8,3 +8,5 @@ for i in range(N):
         output = False
     if len(storage2) >= len(storage):
         output = False
+
+print(output)
