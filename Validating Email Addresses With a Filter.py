@@ -1,3 +1,5 @@
+    try:
+        website, extension = url.split(".")
     except ValueError:
         return False
     
