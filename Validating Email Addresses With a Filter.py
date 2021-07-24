@@ -1,4 +1,6 @@
+def fun(email):
     try:
+        username, url = email.split("@")
         website, extension = url.split(".")
     except ValueError:
         return False
