@@ -1,0 +1,1 @@
+print(eval(input()) == int(ui[1]))
