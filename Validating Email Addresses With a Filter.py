@@ -1,15 +1,23 @@
-def fun(email):
-    try:
-        username, url = email.split("@")
+try:
+        username, url = s.split("@")
         website, extension = url.split(".")
+        if any([username=='',website=='',url=='']): return False
     except ValueError:
-        return False
+        return  False
+				
+    cond1 = all(map(lambda x : 
+    x.isdigit() or 
+    x.isupper() or 
+    x.islower() or 
+    x == '-' or x=='_', 
+    username))
+		
+    cond2 = all(map(lambda x : 
+    x.isdigit() or 
+    x.isupper() or 
+     x.islower(), 
+    website))
+		
+    cond3 = 0< len(extension) < 4
     
-    if username.replace("-", "").replace("_", "").isalnum() is False:
-        return False
-    elif website.isalnum() is False:
-        return False
-    elif len(extension) > 3:
-        return False
-    else:
-        return True
+    return all([cond1,cond2,cond3])
