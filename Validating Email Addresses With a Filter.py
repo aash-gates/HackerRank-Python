@@ -10,3 +10,6 @@ def fun(email):
     elif website.isalnum() is False:
         return False
     elif len(extension) > 3:
+        return False
+    else:
+        return True
