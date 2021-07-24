@@ -8,3 +8,5 @@ def fun(email):
     if username.replace("-", "").replace("_", "").isalnum() is False:
         return False
     elif website.isalnum() is False:
+        return False
+    elif len(extension) > 3:
